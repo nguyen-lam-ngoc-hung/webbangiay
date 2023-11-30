@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài viết</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header top -->
+        <div class="header__top">
+            <div class="container">
+                <section class="row flex">
+                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                        <span>Quản lý bán giày tại Nông Trang- Việt trì</span>
+                    </div>
+
+                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="index.php" class="header__top-link">Hỏi đáp</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Hướng dẫn</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="index.php" class="header__top-link">Đăng ký</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="login.php" class="header__top-link">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <!--end header top -->
+
+        <!-- header bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <section class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                        <h1 class="header__heading">
+                            <a href="#" class="header__logo-link">
+                                <img src="images1/product/logo3.jpg" alt="Logo" class="header__logo-img">
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                        <select name="" id="" class="header__search-select">
+                            <option value="0">All</option>
+                            <option value="1">Giày nike</option>
+                            <option value="2">Giày adias</option>
+                            <option value="3">Giày puma</option>
+                            <option value="3">Giày da</option>
+                            <option value="3">Giày converse</option>
+                            <option value="3">Giày grandcourt</option>
+                            <option value="3">Giày thể thao(giày đinh- đá bóng)</option>
+                        </select>
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm tại đây...">
+                        <button class="header__search-btn">
+                            <div class="header__search-icon-wrap">
+                                <i class="fas fa-search header__search-icon">🔎</i>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+                        <div class="header__call-icon-wrap">
+                            <i class="fas fa-phone-alt header__call-icon"></i>  
+                        </div>
+                        <div class="header__call-info">
+                            <div class="header__call-text">
+                                Gọi điện tư vấn
+                            </div>
+                            <div class="header__call-number">
+                                0912345678
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </section>
+            </div>   
+        </div>
+        <!--end header bottom -->
+
+        <!-- header nav -->
+        <div class="header__nav">
+            <div class="container">
+                <section class="row">
+                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                        <i class="fas fa-bars header__nav-menu-icon"></i>
+                        <div class="header__nav-menu-title">Danh mục sản phẩm</div>
+                    </div>
+
+                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="index.php" class="header__nav-link">Trang chủ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="DMSP.html" class="header__nav-link">Danh mục sản phẩm</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="SP.html" class="header__nav-link">Sản phẩm</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="BV.html" class="header__nav-link">Bài viết</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="LH.html" class="header__nav-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <!--end header nav -->
+    
+    <!-- posts -->
+    <section class="posts">
+        <div class="container">
+            <div class="row pc">
+                <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--active">
+                            <a href="#" class="menu__link">
+                            <img src="images1/item/baby-boy.png" alt=""  class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
+                            Giày bán chạy nhất</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                            <img src="images1/item/translation.png" alt="" class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
+                            Giày thể thao</a>
+                        </li>
+                      
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <img src="images1/item/1380754_batman_comic_hero_superhero_icon.png" alt="" class="menu__item-icon"  viewBox="0 0 512 512" width="1012" height="512">
+
+                            Giày da</a>
+                        </li>
+                      
+                    </ul>
+                </nav>
+
+            <div class="row">
+                <article class="post__list col-lg-9 col-md-9 col-sm-12">
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images1/post/got-it-e-voucher.png" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                      Mẹo săn mã voucher giảm giá
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                        Nguyễn Hùng
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Nếu bạn đang gặp phải những vấn đề về săn, lấy, sử dụng mã voucher. 
+                                Xin hãy yên tâm, bài viết này dành cho bạn! Trong bài viết này mình sẽ chia sẻ đến bạn những mẹo, 
+                                những kinh nghiệm giúp bạn săn được nhiều mã giảm giá nhất có thể.....
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images/phanbietgiay.jpg" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                        Cách phân biệt hàng chính hãng và hàng rep1:1
+                                    </h2>
+                                </a>  
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                        Vi Lamm
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Kiểm tra nguồn gốc xuất xứ: Giày chính hãng thường có nhãn mác ghi rõ nguồn gốc xuất xứ. Nếu nhãn mác không rõ ràng hoặc ghi sai thông tin, đó có thể là giày rep 11.
+Kiểm tra chất liệu: Giày chính hãng được làm từ chất liệu cao cấp, bền bỉ. Nếu bạn thấy chất liệu giày kém chất lượng, dễ bị hỏng hóc, đó có thể là giày rep 11.
+So sánh thiết kế: Giày chính hãng có thiết kế tinh xảo, tỉ mỉ. Nếu bạn thấy thiết kế giày không được hoàn thiện, có nhiều chi tiết sai lệch, đó có thể là giày rep 11.
+Kiểm tra tem nhãn: Giày chính hãng có tem nhãn chính hãng, đầy đủ thông tin. Nếu tem nhãn giả hoặc không có tem nhãn, đó có thể là giày rep 11.
+Kiểm tra hộp đựng: Giày chính hãng được đựng trong hộp đựng chính hãng. Nếu hộp đựng kém chất lượng, không đúng với mẫu mã của giày, đó có thể là giày rep 11
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images1/post/cach-su-dung-ma-giam-gia-hieu-qua-tai-vnreviews.png" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                        Sử dụng mã giảm giá như thế nào 
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                       Nguyễn Hân
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Sau khi lấy được mã bạn phải biết sử dụng đúng cách: 
+                                Về cơ bản thì chúng tôi cho phép bạn sử dụng cùng 
+                                lúc 3 loại mã giảm giá mà mình đã kể trên trong cùng 1 đơn hàng. Bao gồm:
+                                Mã FreeShip,
+                                Mã giảm giá của Shop,
+                                Và Ưu đãi từ đối tác thanh toán,....
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images/doitrahoantien.webp" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                        Hướng dẫn đổi trả , hoàn tiền nếu sản phẩm có vấn đề
+                                    </h2>
+                                </a>  
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                        Nguyễn Oánh
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Khi mua hàng, sản phẩm bạn nhận được không giống hình, sản phẩm bị lỗi. 
+                                Bạn nghĩ mình bị lừa, bạn bối rối không biết làm thế nào và quyết định search google: “Phải làm gì 
+                                khi muốn hoàn trả hàng hoàn tiền trên Edu Book”.  Bài viết này sẽ hướng dẫn bạn đổi trả sách EduBook 
+                                đúng quy trình...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images1/product/tinhnguyen.jpeg" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                   <h2 class="post__item-heading">
+                                        Chương trình tình nguyện mỗi tháng
+                                    </h2> 
+                                </a>
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                        Cao Phong
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Dự án “Tình nguyện mỗi tháng” nhận được sự hưởng ứng rất đông đảo của mọi người vì vậy mỗi tháng chúng tôi đều
+                                trích ra một phần doanh thu để tham gia tình nguyện  ở những nơi như trại trẻ mồ côi, viện dưỡng lão,...
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images1/post/e2.jpg" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                        Phục chế giày cũ tặng cho trẻ em nghèo vùng cao
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                       Đinh Hải
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Chúng tôi thường nhận lại những đôi giày cũ để phục chế và sửa lại  để đem đi quyên góp, 
+                                ủng hộ ác bạn nhỏ vùng xa, thấy rất vui và hào hứng. Rồi bỗng nhiên ngồi nhớ ra nhiều chuyện. 
+                                Hồi nhỏ nhà không có điều kiện, muốn có giày đẹp đeo cũng phải đợi đến tết mới được mua. 
+                                Mà chỗ mình lại ở vùng sâu nên đã thiếu lại càng thêm thiếu...
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="post__pagination">
+                      <ul class="post__pagination-list">
+                        <li class="post__pagination-item">
+                          <a class="post__pagination-link" href="#" aria-label="Previous">
+                            <span class="post__pagination-link-prev">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="post__pagination-item post__pagination-item--active">
+                            <a class="post__pagination-link" href="#">1</a>
+                        </li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">2</a>
+                        </li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">3</a>
+                        </li>
+                        <li class="post__pagination-item post__pagination-item--center">...</li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">9</a>
+                        </li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">10</a>
+                        </li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">11</a>
+                        </li>
+                        <li class="post__pagination-item">
+                          <a class="post__pagination-link" href="#" aria-label="Next">
+                            <span class="post__pagination-link-next">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </article>
+
+                <aside class="post__aside col-lg-3 col-md-3 col-sm-0">
+                    <div class="post__aside-top">
+                        <div class="post__aside-title">
+                            <h3 class="post__aside-heading">
+                                Bài viết liên quan
+                            </h3>
+
+                            <div class="post__aside-list">
+                                <div class="post__aside-item post__aside-item--no-border">
+                                    <div class="post__aside-img-wrap">
+                                        <img src="images1/product/tinhnguyen.jpeg" class="post__aside-img">
+                                    </div>
+                                    <div class="post__aside-title">
+                                        <a href="#" class="post__aside-link">
+                                            <h4 class="post__aside-link-heading">Chương trình tình nguyện mỗi tháng</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="post__aside-item post__aside-item--no-border">
+                                    <div class="post__aside-img-wrap">
+                                        <img src="images1/post/e2.jpg" class="post__aside-img">
+                                    </div>
+                                    <div class="post__aside-title">
+                                        <a href="#" class="post__aside-link">
+                                            <h4 class="post__aside-link-heading"> Phục chế giày cũ tặng cho trẻ em nghèo vùng cao</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__aside-bottom">
+                        <h3 class="post__aside-heading">
+                            Có thể bạn thích
+                        </h3>
+
+                        <div class="post__aside-list">
+                            <div class="post__aside-item post__aside-item--border">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/grand court 1.webp" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading"> Giày grandcourt</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                            2.379.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/giày_nike_cao.webp" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Giày nike(nam- nữ)</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                           3.480.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/giay-nike-dior-dep-hot-hien-nay.jpg" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Giày nike dior</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                           2.119.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/giày sneaker.webp" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Giày sneaker</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                            2.169.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/giay_vans.jpg" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Giày vans</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                            3.122.400đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/giay-nike-air-jordan-1-ca-tinh-cho-nam-nu.jpg" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Giày nike air jordan</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                            2.351.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/giay-nike-dior-dep-hot-hien-nay.jpg" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Nike dior</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                          2.319.580đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/giay-puma-caven-nam-trang-03-1000x1000.jpg" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Giày puma caven(nam)</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                            3.616.575đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>        </div>
+    </section>
+    <!--end posts -->
+
+    <!-- footer -->
+    <footer>
+        <section class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                        <h4 class="footer__top-intro-heading">
+                            Thông tin chúng tôi
+                        </h4>
+                        <div class="footer__top-intro-content">
+                            Cửa hàng luôn cung cấp cho các bạn đam mê 
+                            trên khắp cả nước.Chúng tôi sẽ liên tục cập 
+                            nhật những mẫu giày mới nhất, chất lượng nhất 
+                            giúp người mua được những loại giày mới nhanh nhất ! <br> <br>
+                            Điện thoại: 0912345678 <br>
+                            Email: gghjagdtvrkkk@gmail.com <br>
+                            Zalo:  0912345678 <br>
+                        </div>
+                    </article>
+
+                    <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                        <h4 class="footer__top-policy-heading">
+                            Chính sách mua hàng
+                        </h4>
+
+                        <ul class="footer__top-policy-list">
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hình thức đặt hàng</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hình thức thanh toán</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Phương thức vận chuyển</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Chính sách đổi trả</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hướng dẫn sử dụng</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                        <h4 class="footer__top-contact-heading">
+                            Hotline liên hệ
+                        </h4>
+
+                        <div class="footer__top-contact">
+                            <div class="footer__top-contact-icon">
+                                <img src="images/phone_top.png" class="footer__top-contact-img">
+                            </div>
+
+                            <div class="footer__top-contact-phone-wrap">
+                                <div class="footer__top-contact-phone">
+                                    0912345678
+                                </div>
+                                <div class="footer__top-contact-des">
+                                    (Giải đáp thắc mắc 24/7)
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <h4 class="footer__top-contact-heading">
+                            Kết nối với chúng tôi
+                        </h4>
+
+                        <div class="footer__top-contact-social">
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/facebook.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/youtube.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/tiktok.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/zalo.png">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                    <span class="footer__bottom-content">@Website quản lý bán giày tại Nông Trang- Việt Trì </span>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+    <script src="js/jq.js"></script>
+</body>
+</html>

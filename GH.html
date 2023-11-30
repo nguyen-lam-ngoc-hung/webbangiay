@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header top -->
+        <div class="header__top">
+            <div class="container">
+                <section class="row flex">
+                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                        <span>Quản lý bán giày tại Nông Trang- Việt trì</span>
+                    </div>
+
+                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="index.php" class="header__top-link">
+
+                                Hỏi đáp</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Hướng dẫn</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="register.php" class="header__top-link">Đăng ký</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="login.php" class="header__top-link">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <!--end header top -->
+
+        <div class="header__bottom">
+            <div class="container">
+                <section class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                        <h1 class="header__heading">
+                            <a href="#" class="header__logo-link">
+                                <img src="images1/product/logo3.jpg" alt="Logo" class="header__logo-img">
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                        <select name="" id="" class="header__search-select">
+                            <option value="0">All</option>
+                            <option value="1">Giày nike</option>
+                            <option value="2">Giày adidas</option>
+                            <option value="3">Giày puma</option>
+                            <option value="3">Giày converse</option>
+                            <option value="3">Giày grandcourt</option>
+                            <option value="3">Giày da</option>
+                            <option value="3">Giày thể thao(giày đinh- đá bóng)</option>
+                            
+                        </select>
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm tại đây...">
+                        <button class="header__search-btn">
+                            <div class="header__search-icon-wrap">
+                                <i class="fas fa-search header__search-icon">🔎</i>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+                        <div class="header__call-icon-wrap">
+                            <i class="fas fa-phone-alt header__call-icon"></i>  
+                        </div>
+                        <div class="header__call-info">
+                            <div class="header__call-text">
+                                Gọi điện tư vấn
+                            </div>
+                            <div class="header__call-number">
+                                0912345678
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section>
+            </div>   
+        </div>
+        <!--end header bottom -->
+
+        <!-- header nav -->
+        <div class="header__nav">
+            <div class="container">
+                <section class="row">
+                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                        <i class="fas fa-bars header__nav-menu-icon"></i>
+                        <div class="header__nav-menu-title">Danh mục sản phẩm</div>
+                    </div>
+
+                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="index.php" class="header__nav-link">Trang chủ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="DMSP.html" class="header__nav-link">Danh mục sản phẩm</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="SP.html" class="header__nav-link">Sản phẩm</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="BV.html" class="header__nav-link">Bài viết</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="LH.html" class="header__nav-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <!--end header nav -->
+	<section class="cart">
+		<div class="container">
+			<article class="row cart__head pc">
+				<nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--active">
+                            <a href="#" class="menu__link">
+                            
+                            Giày nike</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                           
+                            Giày adidas</a>
+                        </li>
+                      
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                               
+
+                           Giày puma</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                           
+                                Giày converse</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                           
+                                Giày grandcourt</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                           
+                           Giày da</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                           
+                            Giày thể thao(giày đinh- đá bóng)</a>
+                        </li>
+                    </ul>
+                </nav>
+				<div class="col-6 cart__head-name">
+					Thông tin sản phẩm
+				</div>
+				<div class="col-3 cart__head-quantity">
+					Số lượng
+				</div>
+				<div class="col-3 cart__head-price">
+					Đơn giá
+				</div>
+			</article>
+
+			<article class="row cart__body">
+				<div class="col-6 cart__body-name">
+					<div class="cart__body-name-img">
+						<img src="images1/product/giày_nike_cao.webp">
+					</div>
+					<a href="" class="cart__body-name-title">
+                       nike cổ cao
+					</a>
+				</div>
+				<div class="col-3 cart__body-quantity">
+                    <input type="button" value="-"  class="cart__body-quantity-minus">
+                    <input type="number" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
+                    <input type="button" value="+" class="cart__body-quantity-plus">
+				</div>
+				<div class="col-3 cart__body-price">
+					<span>3.147.000đ</span>
+
+					<a href="#">Xóa</a>
+				</div>
+			</article>
+
+			<article class="row cart__body">
+				<div class="col-6 cart__body-name">
+					<div class="cart__body-name-img">
+						<img src="images1/product/puma-trang-den-01.jpg">
+					</div>
+					<a href="" class="cart__body-name-title">
+						Giày pumaS
+					</a>
+				</div>
+				<div class="col-3 cart__body-quantity">
+                    <input type="button" value="-"  class="cart__body-quantity-minus">
+                    <input type="number" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
+                    <input type="button" value="+" class="cart__body-quantity-plus">
+				</div>
+				<div class="col-3 cart__body-price">
+					<span> 2.219.000đ</span>
+
+					<a href="#">Xóa</a>
+				</div>
+			</article>
+
+			<article class="row cart__body">
+				<div class="col-6 cart__body-name">
+					<div class="cart__body-name-img">
+						<img src="images1/product/giay_vans.jpg">
+					</div>
+					<a href="" class="cart__body-name-title">
+						Giày vans
+					</a>
+				</div>
+				<div class="col-3 cart__body-quantity">
+                    <input type="button" value="-"  class="cart__body-quantity-minus">
+                    <input type="number" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
+                    <input type="button" value="+" class="cart__body-quantity-plus">
+				</div>
+				<div class="col-3 cart__body-price">
+					<span>2.169.000đ</span>
+
+					<a href="#">Xóa</a>
+				</div>
+			</article>
+
+			<article class="row cart__body">
+				<div class="col-6 cart__body-name">
+					<div class="cart__body-name-img">
+						<img src="images1/product/giày sneaker.webp">
+					</div>
+					<a href="" class="cart__body-name-title">
+						Giày sneaker
+					</a>
+				</div>
+				<div class="col-3 cart__body-quantity">
+                    <input type="button" value="-"  class="cart__body-quantity-minus">
+                    <input type="number" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
+                    <input type="button" value="+" class="cart__body-quantity-plus">
+				</div>
+				<div class="col-3 cart__body-price">
+					<span>2.179.000đ</span>
+
+					<a href="#">Xóa</a>
+				</div>
+			</article>
+
+			<article class="row cart__foot">
+				<div class="col-6 col-lg-6 col-sm-6 cart__foot-update">
+					<button class="cart__foot-update-btn">Cập nhật giỏ hàng</button>
+				</div>
+
+				<p class="col-3 col-lg-3 col-sm-3 cart__foot-total">
+					Tổng cộng: 
+				</p>
+
+				<span class="col-3 col-lg-3 col-sm-3 cart__foot-price">
+					9.714.000đ <br>
+
+					<button class="cart__foot-price-btn">Xác nhận mua</button>
+				</span>
+			</article>
+		</div>
+	</section>
+    <!--end cart -->
+
+    <!-- footer -->
+    <footer>
+        <section class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                        <h4 class="footer__top-intro-heading">
+                            Thông tin chúng tôi
+                        </h4>
+                        <div class="footer__top-intro-content">
+                        Cửa hàng luôn cung cấp cho các bạn đam mê 
+                        trên khắp cả nước.Chúng tôi sẽ liên tục cập 
+                        nhật những mẫu giày mới nhất, chất lượng nhất 
+                        giúp người mua được những loại giày mới nhanh nhất ! <br> <br>
+                        Điện thoại: 0912345678 <br>
+                        Email: gghjagdtvrkkk@gmail.com <br>
+                        Zalo:  0912345678<br>
+                        </div>
+                    </article>
+
+                    <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                        <h4 class="footer__top-policy-heading">
+                            Chính sách mua hàng
+                        </h4>
+
+                        <ul class="footer__top-policy-list">
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hình thức đặt hàng</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hình thức thanh toán</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Phương thức vận chuyển</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Chính sách đổi trả</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hướng dẫn sử dụng</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                        <h4 class="footer__top-contact-heading">
+                            Hotline liên hệ
+                        </h4>
+
+                        <div class="footer__top-contact">
+                            <div class="footer__top-contact-icon">
+                                <img src="images/phone_top.png" class="footer__top-contact-img">
+                            </div>
+
+                            <div class="footer__top-contact-phone-wrap">
+                                <div class="footer__top-contact-phone">
+                                    0912345678
+                                </div>
+                                <div class="footer__top-contact-des">
+                                    (Giải đáp thắc mắc 24/7)
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <h4 class="footer__top-contact-heading">
+                            Kết nối với chúng tôi
+                        </h4>
+
+                        <div class="footer__top-contact-social">
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/facebook.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/youtube.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/tiktok.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/zalo.png">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                    <span class="footer__bottom-content">@Website quản lý bán giày tại Nông Trang- Việt Trì </span>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+    <script src="js/jq.js"></script>
+</body>
+</html>

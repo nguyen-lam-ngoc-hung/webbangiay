@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header top -->
+        <div class="header__top">
+            <div class="container">
+                <section class="row flex">
+                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                        <span>Quản lý bán giày tại Nông Trang- Việt trì</span>
+                    </div>
+
+                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">
+
+                                Hỏi đáp</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Hướng dẫn</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="register.php" class="header__top-link">Đăng ký</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="login.php" class="header__top-link">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <!--end header top -->
+
+        <!-- header bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <section class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                        <h1 class="header__heading">
+                            <a href="#" class="header__logo-link">
+                                <img src="images1/product/logo3.jpg" alt="Logo" class="header__logo-img">
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                        <select name="" id="" class="header__search-select">
+                            <option value="0">All</option>
+                            <option value="1">Giày nike</option>
+                            <option value="2">Giày adidas</option>
+                            <option value="3">Giày puma</option>
+                            <option value="3">Giày converse</option>
+                            <option value="3">Giày da</option>
+                            <option value="3">Giày grandcourt</option>
+                            <option value="3">Giày thể thao(giày đinh- đá bóng)</option>
+                            
+                        </select>
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm tại đây...">
+                        <button class="header__search-btn">
+                            <div class="header__search-icon-wrap">
+                                <i class="fas fa-search header__search-icon">🔎</i>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+                        <div class="header__call-icon-wrap">
+                            <i class="fas fa-phone-alt header__call-icon"></i>  
+                        </div>
+                        <div class="header__call-info">
+                            <div class="header__call-text">
+                                Gọi điện tư vấn
+                            </div>
+                            <div class="header__call-number">
+                                0912345678
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </section>
+            </div>   
+        </div>
+        <!--end header bottom -->
+
+        <!-- header nav -->
+        <div class="header__nav">
+            <div class="container">
+                <section class="row">
+                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                        <i class="fas fa-bars header__nav-menu-icon"></i>
+                        <div class="header__nav-menu-title">Danh mục sản phẩm</div>
+                    </div>
+
+                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="index.php" class="header__nav-link">Trang chủ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="DMSP.html" class="header__nav-link">Danh mục sản phẩm</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="SP.html" class="header__nav-link">Sản phẩm</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="BV.html" class="header__nav-link">Bài viết</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="LH.html" class="header__nav-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <!--end header nav -->
+    <!-- product -->
+    <section class="product">
+        <div class="container">
+            <div class="row bg-white pt-4 pb-4 border-bt pc">
+                <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--active">
+                            <a href="#" class="menu__link">
+                           
+                        Giày nike</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                            
+                           Giày adidas</a>
+                        </li>
+                      
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                               
+
+                            Giày puma</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                               
+
+                            Giày da</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                               
+
+                            Giày thể thao(giày đinh- đá bóng)</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                               
+
+                            Giày converse</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                               
+
+                            Giày grandcourt</a>
+                        </li>
+                      
+                    </ul>
+                </nav>
+
+                <article class="product__main col-lg-9 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="product__main-img col-lg-4 col-md-4 col-sm-12">
+                            <div class="product__main-img-primary">
+                                <img src="images1/product/giay-nike-dior-dep-hot-hien-nay.jpg">
+                            </div>
+
+                            <div class="product__main-img-list">
+                               
+                                <img src="images1/product/giay da 7.jpg">
+                                <img src="images1/product/giay-puma-caven-nam-trang-03-1000x1000.jpg">
+                                <img src="images1/product/giày_nike_cao.webp">
+                            </div>
+                        </div>
+
+                        <div class="product__main-info col-lg-8 col-md-8 col-sm-12">
+                            <div class="product__main-info-breadcrumb">
+                                Trang chủ / Sản phẩm
+                            </div>
+                            
+                            <a href="#" class="product__main-info-title">
+                                <h2 class="product__main-info-heading">
+                                    Thông tin sản phẩm
+                                </h2>
+                            </a>
+
+                            <div class="product__main-info-rate-wrap">
+                                <i class="fas fa-star product__main-info-rate"></i>
+                                <i class="fas fa-star product__main-info-rate"></i>
+                                <i class="fas fa-star product__main-info-rate"></i>
+                                <i class="fas fa-star product__main-info-rate"></i>
+                                <i class="fas fa-star product__main-info-rate"></i>
+                            </div>
+
+                            <div class="product__main-info-price">
+                                <span class="product__main-info-price-current">
+                                   2.740.000đ
+                                </span>
+                            </div>
+
+                            <div class="product__main-info-description">
+                               
+                                Nike Air Jordan 1 là một đôi giày bóng rổ được phát hành lần đầu tiên vào năm 1985. Air Jordan 1 được thiết kế bởi Peter Moore và được lấy cảm hứng từ Michael Jordan. Air Jordan 1 là một đôi giày thể thao phổ biến cho cả nam và nữ.
+                            </div> 
+
+                            <div class="product__main-info-cart">
+                                <div class="product__main-info-cart-quantity">
+                                    <input type="button" value="-"  class="product__main-info-cart-quantity-minus">
+                                    <input type="number" step="1" min="1" max="999" value="1" class="product__main-info-cart-quantity-total">
+                                    <input type="button" value="+" class="product__main-info-cart-quantity-plus">
+                                </div>
+                                
+                                <div class="product__main-info-cart-btn-wrap">
+                                    <button class="product__main-info-cart-btn">
+                                        Thêm vào giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product__main-info-contact">
+                                <a href="#" class="product__main-info-contact-fb">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Chat Facebook
+                                </a>
+                                <div class="product__main-info-contact-phone-wrap">
+                                    <div class="product__main-info-contact-phone-icon">
+                                        <i class="fas fa-phone-alt "></i>
+                                    </div>
+                                    
+                                    <div class="product__main-info-contact-phone">
+                                        <div class="product__main-info-contact-phone-title">
+                                            Gọi điện tư vấn
+                                        </div>
+                                        <div class="product__main-info-contact-phone-number">
+                                            ( 0912345678)
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row bg-white">
+                        <div class="col-12 product__main-tab">
+                            <a href="#" class="product__main-tab-link product__main-tab-link--active">
+                                Mô tả
+                            </a>
+                            <a href="#" class="product__main-tab-link">
+                                Đánh giá
+                            </a>
+                        </div>
+
+                        <div class="col-12 product__main-content-wrap">
+                            <h2 class="product__main-content-heading">
+                                Thông tin sản phẩm
+                            </h2>
+
+                            <p>
+                                <span>Nike Air Force 1</span> là một đôi giày thể thao cổ điển được phát hành lần đầu tiên vào năm 1982. Air Force 1 được thiết kế bởi Bruce Kilgore và được lấy cảm hứng từ máy bay ném bom B-17. Air Force 1 là một đôi giày thể thao phổ biến cho cả nam và nữ.
+                               <br> <span> Nike Air Jordan 1 </span>là một đôi giày bóng rổ được phát hành lần đầu tiên vào năm 1985. Air Jordan 1 được thiết kế bởi Peter Moore và được lấy cảm hứng từ Michael Jordan. Air Jordan 1 là một đôi giày thể thao phổ biến cho cả nam và nữ.
+                               <br> <span>Nike Air Max</span> là một dòng giày thể thao được phát hành lần đầu tiên vào năm 1987. Air Max được thiết kế bởi Tinker Hatfield và được lấy cảm hứng từ đệm khí Air Max. Air Max là một dòng giày thể thao phổ biến cho cả nam và nữ.
+                              <br>  <span>Nike Dunk</span> là một dòng giày thể thao được phát hành lần đầu tiên vào năm 1985. Dunk được thiết kế bởi Peter Moore và được lấy cảm hứng từ giày bóng rổ. Dunk là một dòng giày thể thao phổ biến cho cả nam và nữ.
+                              <br> <span> Nike Blazer</span> là một đôi giày thể thao cổ điển được phát hành lần đầu tiên vào năm 1973. Blazer được thiết kế bởi Peter Moore và được lấy cảm hứng từ giày bóng rổ. Blazer là một đôi giày thể thao phổ biến cho cả nam và nữ.
+
+                            </p>
+                            <p>Cảm ơn bạn đẫ tìm hiểu về sản phẩm của chúng tôi.</p>
+                            
+                           
+                        
+                    </div>
+                </article>
+
+                <aside class="product__aside col-lg-3 col-md-0 col-sm-0">
+                    <div class="product__aside-top">
+                        <div class="product__aside-top-item">
+                            <img src="images/shipper.png">
+                            <div class="product__aside-top-item-text">
+                                <p>
+                                    Giao hàng nhanh chóng
+                                </p>
+                                <span>
+                                    Chỉ trong vòng 24h
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__aside-top-item">
+                            <img src="images/brand.png">
+                            <div class="product__aside-top-item-text">
+                                <p>
+                                    Sản phẩm chính hãng
+                                </p>
+                                <span>
+                                    Sản phẩm nhập khẩu 100%
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__aside-top-item">
+                            <img src="images/less.png">
+                            <div class="product__aside-top-item-text">
+                                <p>
+                                    Mua hàng tiết kiệm
+                                </p>
+                                <span>
+                                    Rẻ hơn từ 10% đến 30%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__aside-bottom">
+                        <h3 class="product__aside-heading">
+                            Có thể bạn thích
+                        </h3>
+
+                        <div class="product__aside-list">
+                            <div class="product__aside-item product__aside-item--border">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/converse-twisted-classics-mood-1-600x400.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading"> Giày converse twisted...</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                            2.372.250
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/giay da 7.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">Giày da cổ cao</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                            3.276.800đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/converse.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">Giày converse</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                          2.169.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/giay-nike-af1-hot-nhat-cho-nam-nu.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">Giày nike af1</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                         2.334.300đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__aside-item">
+                                <div class="product__aside-img-wrap">
+                                    <img src="images1/product/adidas-stan-smith-nam-nu-hot-hien-nay.jpg" class="product__aside-img">
+                                </div>
+                                <div class="product__aside-title">
+                                    <a href="#" class="product__aside-link">
+                                        <h4 class="product__aside-link-heading">adidas stan smith</h4>
+                                    </a>
+
+                                    <div class="product__aside-rate-wrap">
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                        <i class="fas fa-star product__aside-rate"></i>
+                                    </div>
+
+                                    <div class="product__aside-price">
+                                        <span class="product__aside-price-current">
+                                            2.470.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                               
+                            
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+            
+           <div class="customer-reviews row pb-4 pb-4  py-4 pb-4 py-4 py-4">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h3 >Bình luận sản phẩm</h3>
+                <form id ="formgroupcomment" method="post">
+                    <div class="form-group">
+                        <label>Tên:</label>
+                        <input name="comm_name" required="" type="text" id ='form-name' class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input name="comm_mail" required="" type="email"  class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label>Nội dung:</label>
+                        <textarea name="comm_details" required="" rows="8" id ='formcontent' class="form-control"></textarea>     
+                    </div>
+                    <button type="submit" name="sbm" id= "submitcomment" class="btn btn-primary">Gửi</button>
+                </form> 
+            </div>
+           </div>      
+             
+            <section class="product__love col-12 mt-4">
+                <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading">
+                        Một số loại giày da có thể bạn thích
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 1.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                         3.300.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.273.000đ
+                        </span>
+                    </div>  
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 2.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                           3.150.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.120.000đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 3.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide 
+                        ">
+                           2.350.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.947.200đ
+                        </span>
+                    </div>
+                </div>
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 4.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                           2.430.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                           1.924.000đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 5.jpg" alt="" class="product__panel-img" width="110">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da <br>
+                            
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                           2.762.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.937.200đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 6.jpg" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            2.385.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.972.250đ
+                        </span>
+                    </div> 
+                </div>
+            </div>
+            </section>
+        </div>
+    </section>
+    <!--product -->
+
+    <!-- footer -->
+    <footer>
+        <section class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                        <h4 class="footer__top-intro-heading">
+                            Thông tin chúng tôi
+                        </h4>
+                        <div class="footer__top-intro-content">
+                            Cửa hàng luôn cung cấp cho các bạn đam mê 
+                            trên khắp cả nước.Chúng tôi sẽ liên tục cập 
+                            nhật những mẫu giày mới nhất, chất lượng nhất 
+                            giúp người mua được những loại giày mới nhanh nhất ! <br> <br>
+                            Điện thoại: 0912345678 <br>
+                            Email: gghjagdtvrkkk@gmail.com <br>
+                            Zalo:  0912345678<br>
+                        </div>
+                    </article>
+
+                    <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                        <h4 class="footer__top-policy-heading">
+                            Chính sách mua hàng
+                        </h4>
+
+                        <ul class="footer__top-policy-list">
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hình thức đặt hàng</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hình thức thanh toán</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Phương thức vận chuyển</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Chính sách đổi trả</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hướng dẫn sử dụng</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                        <h4 class="footer__top-contact-heading">
+                            Hotline liên hệ
+                        </h4>
+
+                        <div class="footer__top-contact">
+                            <div class="footer__top-contact-icon">
+                                <img src="images/phone_top.png" class="footer__top-contact-img">
+                            </div>
+
+                            <div class="footer__top-contact-phone-wrap">
+                                <div class="footer__top-contact-phone">
+                                    012345678
+                                </div>
+                                <div class="footer__top-contact-des">
+                                    (Giải đáp thắc mắc 24/7)
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <h4 class="footer__top-contact-heading">
+                            Kết nối với chúng tôi
+                        </h4>
+
+                        <div class="footer__top-contact-social">
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/facebook.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/youtube.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/tiktok.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/zalo.png">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                    <span class="footer__bottom-content">@Website quản lý bán giày tại Nông Trang- Việt Trì </span>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/jq.js"></script>
+    <script src="js/product.js"></script>
+        
+</body>
+</html>

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+ <link rel="stylesheet" href="css/category.css">
+ <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header top -->
+        <div class="header__top">
+            <div class="container">
+                <section class="row flex">
+                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                        <span>Quản lý bán giày tại Nông Trang- Việt trì</span>
+                    </div>
+
+                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">
+
+                                Hỏi đáp</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Hướng dẫn</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="register.php" class="header__top-link">Đăng ký</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="login.php" class="header__top-link">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <!--end header top -->
+
+        <!-- header bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <section class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                        <h1 class="header__heading">
+                            <a href="index.php" class="header__logo-link">
+                                <img src="images1/product/logo3.jpg" alt="Logo" class="header__logo-img">
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                        <select name="" id="categorySelect" class="header__search-select">
+                            <option value="0">All</option>
+                            <option value="1">Giày nike</option>
+                            <option value="2">Giày adidas</option>
+                            <option value="3">Giày puma</option>
+                            <option value="3">Giày da</option>
+                            <option value="3">Giày converse</option>
+                            <option value="3">Giày grandcourt</option>
+                            <option value="3">Giày thể thao(giày đinh- đá bóng)</option>
+                            
+                        </select>
+                        <input type="text" id ="productNameSelect"class="header__search-input" placeholder="Tìm kiếm tại đây...">
+                        <button class="header__search-btn">
+                            <div class="header__search-icon-wrap">
+                                <i class="fas fa-search header__search-icon">🔎</i>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+                        <div class="header__call-icon-wrap">
+                            <i class="fas fa-phone-alt header__call-icon"></i>  
+                        </div>
+                        <div class="header__call-info">
+                            <div class="header__call-text">
+                                Gọi điện tư vấn
+                            </div>
+                            <div class="header__call-number">
+                                0817270804
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section>
+            </div>   
+        </div>
+        <!--end header bottom -->
+
+        <!-- header nav -->
+        <div class="header__nav">
+            <div class="container">
+                <section class="row">
+                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                        <i class="fas fa-bars header__nav-menu-icon"></i>
+                        <div class="header__nav-menu-title">Danh mục sản phẩm</div>
+                    </div>
+
+                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Giày nike</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Giày adidas</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Giày puma</a>
+                            </li>   
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Giày converse</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Giày da</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Giày grandcourt</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Giày thể thao(giày đinh- đá bóng)</a>
+                            </li>                       
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- category 1: Giày bán chạy nhất-->
+    <section id ='category1' class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                        Giày bán chạy nhất
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/grand court 1.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#"  class="product__panel-link">Giày grandcourt</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            2.880.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.969.000đ
+                        </span>
+                    </div>  
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/converse-twisted-classics-mood-1-600x400.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="p-name product__panel-link">Giày converse twisted classics mood-1</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            1.149.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.334.300đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay-nike-af1-hot-nhat-cho-nam-nu.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày nike-af1</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide 
+                        ">
+                            2.109.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.370.000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/puma-trang-den-01.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class=" product__panel-link">Giày puma (trắng- đen)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            2.150.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.712.500đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay-puma-caven-nam-trang-03-1000x1000.jpg" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày puma caven trắng(nam)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            2.150.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.439.500đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giày_nike_cao.webp" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày nike cổ cao
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            3.278.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            3.263.960đ
+                        </span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- category 2: Giày thể thao-->
+    <section  id ='category2' class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                       Giày thể thao(giày đinh- đá bóng)
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/th (9).jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày thể thao (trắng hồng)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <!-- product__panel-price-old-hide -->
+                        <span class="product__panel-price-old "> 
+                            2.178.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.169.100đ
+                        </span>
+                    </div>  
+
+                    <div class="product__panel-price-sale-off">
+                        -5%
+                    </div>
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/th (10).jpg" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày thể thao (đỏ) 
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            2.307.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.291.650đ
+                        </span>
+                    </div> 
+
+                    <div class="product__panel-price-sale-off">
+                        -5%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/th (11).jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày thể thao(vàng chanh)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old  ">
+                            2.395.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.975.250đ
+                        </span>
+                    </div>
+
+                    <div class="product__panel-price-sale-off">
+                        -5%
+                    </div> 
+                </div>
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/z4228549019474_a680ace3abdcecc555ef7cec1f8c5fd5.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày thể thao(nâu đồng)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old  ">
+                            2.555.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.985.250đ
+                        </span>
+                    </div>
+
+                    <div class="product__panel-price-sale-off">
+                        -5%
+                    </div> 
+
+                  
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/z4228549044959_8f56c70f51f980ba2ac95259370cd991-e1680317282439.jpg" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày thể thao(đa sắc)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            2.307.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            3.100.800đ
+                        </span>
+                    </div> 
+
+                     <div class="product__panel-price-sale-off">
+                        -10%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/z4318483702044_569fa17e2597ff9ba37ac0222dacbf45.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày thể thao(trắng cam)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            2.307.000đ
+                        </span>
+
+                        <span class="product__panel-price-current">
+                            2.933.000đ
+                        </span>
+                    </div> 
+
+
+                    <div class="product__panel-price-sale-off">
+                        -5%
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- category 3: Giày da-->
+    <section  id ='category3'class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                       Giày da
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 1.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            2.120.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.318.000đ
+                        </span>
+                    </div>  
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 2.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            2.320.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.118.000đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 3.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            2.440.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.568.000đ
+                        </span>
+                    </div> 
+
+                    <div class="product__panel-price-sale-off">
+                        -20%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 4.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            3.130.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            2.127.000đ
+                        </span>
+                    </div>
+
+                    <div class="product__panel-price-sale-off">
+                        -10%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 5.jpg" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            2.319.500đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.616.575đ
+                        </span>
+                    </div> 
+
+                    <div class="product__panel-price-sale-off">
+                        -15%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/giay da 7.jpg" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Giày da cổ cao
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            3.425.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            3.263.960đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+            <section class="footer__top">
+                <div class="container">
+                    <div class="row">
+                        <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                            <h4 class="footer__top-intro-heading">
+                                Thông tin chúng tôi
+                            </h4>
+                            <div class="footer__top-intro-content">
+                                Cửa hàng luôn cung cấp cho các bạn đam mê 
+                                 trên khắp cả nước.Chúng tôi sẽ liên tục cập 
+                                nhật những mẫu giày mới nhất, chất lượng nhất 
+                                giúp người mua được những loại giày mới nhanh nhất ! <br> <br>
+                                Điện thoại: 0912345678 <br>
+                                Email: gghjagdtvrkkk@gmail.com <br>
+                                Zalo: 0912345678 <br>
+                            </div>
+                        </article>
+    
+                        <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                            <h4 class="footer__top-policy-heading">
+                                Chính sách mua hàng
+                            </h4>
+    
+                            <ul class="footer__top-policy-list">
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Hình thức đặt hàng</a>
+                                </li>
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Hình thức thanh toán</a>
+                                </li>
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Phương thức vận chuyển</a>
+                                </li>
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Chính sách đổi trả</a>
+                                </li>
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Hướng dẫn sử dụng</a>
+                                </li>
+                            </ul>
+                        </article>
+    
+                        <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                            <h4 class="footer__top-contact-heading">
+                                Hotline liên hệ
+                            </h4>
+    
+                            <div class="footer__top-contact">
+                                <div class="footer__top-contact-icon">
+                                    <img src="images/phone_top.png" class="footer__top-contact-img">
+                                </div>
+    
+                                <div class="footer__top-contact-phone-wrap">
+                                    <div class="footer__top-contact-phone">
+                                        0912345678
+                                    </div>
+                                    <div class="footer__top-contact-des">
+                                        (Giải đáp thắc mắc 24/7)
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <h4 class="footer__top-contact-heading">
+                                Kết nối với chúng tôi
+                            </h4>
+    
+                            <div class="footer__top-contact-social">
+                                <a href="#" class="footer__top-contact-social-link">
+                                    <img src="images/facebook.png">
+                                </a>
+                                <a href="#" class="footer__top-contact-social-link">
+                                    <img src="images/youtube.png">
+                                </a>
+                                <a href="#" class="footer__top-contact-social-link">
+                                    <img src="images/tiktok.png">
+                                </a>
+                                <a href="#" class="footer__top-contact-social-link">
+                                    <img src="images/zalo.png">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <span class="footer__bottom-content">@Website quản lý bán giày tại Nông Trang- Việt Trì </span>
+                    </div>
+                </div>
+            </section>
+    </footer>
+
+    <!-- end footer -->
+    <script src="js/jq.js"></script>
+    <script src="js/category.js"></script>
+</body>
+</html>
